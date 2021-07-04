@@ -16,7 +16,6 @@ import random
 import json
 from keras.models import load_model
 import pickle
-import socket
 
 # class Question(BaseModel):
 #   question : str
@@ -100,19 +99,6 @@ def index():
 
 #     uvicorn.run(app, host='127.0.0.1', port=4000, debug=True)
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
 
-#     uvicorn.run(app, debug=True)
-
-hostname = socket.gethostname()
-
-version = f"{sys.version_info.major}.{sys.version_info.minor}"
-
-
-@app.get("/")
-async def read_root():
-    return {
-        "name": "my-app",
-        "host": hostname,
-        "version": f"Hello world! From FastAPI running on Uvicorn. Using Python {version}"
-    }
+    uvicorn.run(app, debug=True)
