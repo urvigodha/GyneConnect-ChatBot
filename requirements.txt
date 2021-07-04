@@ -10,3 +10,5 @@ httptools
 scipy>=0.15.1
 keras
 nltk
+socket
+gunicorn
