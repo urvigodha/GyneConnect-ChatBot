@@ -10,6 +10,4 @@ httptools
 scipy>=0.15.1
 scikit-learn==0.22.1
 keras
-json
-random
 nltk
