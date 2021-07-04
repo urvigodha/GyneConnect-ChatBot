@@ -17,8 +17,8 @@ import json
 from keras.models import load_model
 import pickle
 
-class Question(BaseModel):
-  question : str
+# class Question(BaseModel):
+#   question : str
 
 app = FastAPI()
 
@@ -95,6 +95,10 @@ def index():
 # def get_questions():
 #   return {'unanswered_questions':new_Qs}
 
+# if __name__ == '__main__':
+
+#     uvicorn.run(app, host='127.0.0.1', port=4000, debug=True)
+
 if __name__ == '__main__':
 
-    uvicorn.run(app, host='127.0.0.1', port=4000, debug=True)
+    uvicorn.run(app, debug=True)
