@@ -101,4 +101,4 @@ def index():
 
 if __name__ == '__main__':
 
-    uvicorn.run(app, debug=True)
+    uvicorn.run(app, host='https://gyneconnect-chatbot.herokuapp.com/', port=4000, debug=True)
